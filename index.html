@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shesh Shiromani — Physicist, Full Stack Developer, Tabla Player & National Swimmer. President @ PhySoc DPS RK Puram." />
+  <title>Shesh Shiromani</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- INTRO OVERLAY -->
+<div id="intro">
+  <canvas id="introCanvas"></canvas>
+  <div id="introSkip">[ click or press any key to skip ]</div>
+</div>
+
+<!-- ATMOSPHERIC BACKGROUND -->
+<div class="bg-atmosphere" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav>
+  <a href="#home" class="nav-logo">S<span>.</span>Shiromani</a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#honours">Honours</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-controls">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+      <span>☀</span> Light
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#publications">Publications</a>
+  <a href="#honours">Honours</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     MAIN
+════════════════════════════════════════ -->
+<main>
+
+  <!-- ── HERO ── -->
+  <section class="section hero" id="home">
+    <div class="hero-layout">
+      <div class="hero-left">
+        <p class="hero-eyebrow"><span id="typedText">Delhi, India · Class of 2026</span></p>
+        <h1 class="hero-name">Shesh<br><em>Shiromani</em></h1>
+        <p class="hero-tagline"><strong>President @ PhySoc · Full Stack Dev @ InkEssence</strong><br>Physicist, builder, tabla player &amp; national swimmer —<br>curious about everything from quantum mechanics to quant finance.</p>
+        <p class="hero-sub">1,342 followers · 500+ connections on <span>LinkedIn</span> &nbsp;·&nbsp; NYAS · Edunomix · HVTSP '24,'25</p>
+        <div class="hero-tags">
+          <span class="tag">Physics</span>
+          <span class="tag">Mathematics</span>
+          <span class="tag">Full Stack Development</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag ind">Competitive Programming</span>
+          <span class="tag ind">Machine Learning</span>
+          <span class="tag ind">Quantitative Finance</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="https://www.linkedin.com/in/shesh08/" target="_blank" rel="noopener" class="btn btn-primary">↗ LinkedIn</a>
+          <a href="#experience" class="btn btn-outline">Explore ↓</a>
+        </div>
+        <div class="hero-scroll">Scroll</div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <img src="photo.jpeg" alt="Shesh Shiromani" class="hero-photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <p class="section-label reveal">About</p>
+    <h2 class="section-title reveal">Who I <em>am</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm currently studying Physics, Mathematics, Computer Science, Chemistry, and English in Grade 12 at DPS RK Puram. Previously I attended DPS Noida and Amity Noida for junior school.</p>
+        <p>My interests include Classical Physics, Relativistic Quantum Mechanics, Cosmology, Integral and Differential Calculus, Topology, Combinatorics, Competitive Programming, amateur ML and Web Development. I look forward to working in quant-finance and fintech-based ventures in the future.</p>
+        <p>Beyond tech, I'm a professional beatboxer and lead tabla player, a national-level swimmer (2 bronze medals at nationals), and a photography &amp; filmmaking enthusiast. During the 2020 lockdown I organised public music performances near my house to keep spirits up.</p>
+
+        <div class="about-interests">
+          <strong>// Test Scores</strong>
+        </div>
+        <div class="test-scores" style="margin-top:0.8rem;">
+          <div class="test-score-row">
+            <span class="test-name">AISSCE Class 10 (CBSE)</span>
+            <span class="test-score">95.2% · Class Rank 2</span>
+          </div>
+          <div class="test-score-row">
+            <span class="test-name">PSAT</span>
+            <span class="test-score">1050/1500 · Maths 95%</span>
+          </div>
+          <div class="test-score-row">
+            <span class="test-name">Big Bang Edge Scholarship</span>
+            <span class="test-score">100% Scholarship</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="stat-grid">
+          <div class="stat-cell">
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Years Academic Excellence</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">2</div>
+            <div class="stat-label">National Bronze Medals (Swimming)</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num ind">50+</div>
+            <div class="stat-label">PhySoc Interviews Conducted</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num ind">10k+</div>
+            <div class="stat-label">Monthly Quora Views</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="section" id="experience">
+    <p class="section-label reveal">Experience</p>
+    <h2 class="section-title reveal">Where I've <em>contributed</em></h2>
+
+    <div class="timeline">
+
+      <!-- Campus Ambassador -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">International MUN</div>
+            <div class="timeline-org-meta">Internship · Online/Hybrid</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Campus Ambassador</span>
+              <span class="timeline-date">Mar 2026 – Present · 1 mo</span>
+            </div>
+            <div class="timeline-type">Internship · Hybrid</div>
+            <div class="timeline-desc">Campus Management, Social Media and related skills.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Campus Management</span>
+              <span class="skill-pill">Social Media</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CodingEquity -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">CodingEquity</div>
+            <div class="timeline-org-meta">Part-time · Remote</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Frontend Developer</span>
+              <span class="timeline-date">Oct 2025 – Present · 6 mos</span>
+            </div>
+            <div class="timeline-type">Part-time · Remote</div>
+            <div class="timeline-desc">Started recently — this venture aims to design specialised web-based technical tools for clients. Working mostly on the back-end, also helping recruit more developers and designers.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Front-End Design</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PhySoc -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">PhySoc — Physics Society DPSRKP</div>
+            <div class="timeline-org-meta">Part-time · 2 yrs 9 mos · Delhi, Hybrid</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">President</span>
+              <span class="timeline-date">Aug 2025 – Present · 8 mos</span>
+            </div>
+            <div class="timeline-type">Part-time · Delhi, Hybrid</div>
+            <div class="timeline-desc">Doing everything you can possibly imagine — full operational leadership of the Physics Society.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Physics</span>
+              <span class="skill-pill">Mathematics</span>
+              <span class="skill-pill">Leadership</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Departmental Head — Research &amp; Question Paper Design</span>
+              <span class="timeline-date">Jul 2025 – Aug 2025 · 2 mos</span>
+            </div>
+            <div class="timeline-type">Remote</div>
+            <div class="timeline-desc">
+              <ul>
+                <li>In charge of the question paper design process for the PhySoc Common Paper.</li>
+                <li>Designed research, design, and group discussion prompts for departmental inductions.</li>
+                <li>Reviewed expository research papers written by participants and filtered qualifying ones.</li>
+                <li>Responsible for entire departmental management alongside senior members.</li>
+                <li>Conducted 50+ interviews for selectively assessing the skills of PhySoc Members.</li>
+              </ul>
+            </div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Question Paper Design</span>
+              <span class="skill-pill">Physics</span>
+              <span class="skill-pill">Research</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Executive / Senior Member</span>
+              <span class="timeline-date">Apr 2024 – Jul 2025 · 1 yr 4 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Remote</div>
+            <div class="timeline-desc">In charge of "Phyzard" — the annual physics magazine's drafting, designing, and publication process. Took interviews of Principal, Vice Principals, and Club Incharges for the magazine.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Physics</span>
+              <span class="skill-pill">Mathematics</span>
+              <span class="skill-pill">Publishing</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Junior Member</span>
+              <span class="timeline-date">Jul 2023 – Mar 2024 · 9 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Hybrid</div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Worked with a team of 20+ members to prepare the final draft of "Phyzard".</li>
+                <li>Responsible for selecting, reviewing, and editing articles for the Phyzard Magazine.</li>
+                <li>Coordinated with the design and outreach team to brainstorm designs for every article.</li>
+              </ul>
+            </div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Research Skills</span>
+              <span class="skill-pill">Physics</span>
+              <span class="skill-pill">Editing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NYAS -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">The New York Academy of Sciences</div>
+            <div class="timeline-org-meta">Part-time · Remote</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Member</span>
+              <span class="timeline-date">Aug 2025 – Present · 8 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Remote</div>
+            <div class="timeline-desc">Currently working on a team-based project called "Heliogrid" which aims to find effective solar energy-based solutions to global warming and ozone layer hypothesis. Previously reviewed expository papers from other junior academy members.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Physics</span>
+              <span class="skill-pill">Mathematics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edunomix -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">Edunomix Institute</div>
+            <div class="timeline-org-meta">Part-time · Remote</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Member, India Chapter</span>
+              <span class="timeline-date">Sep 2025 – Present · 7 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Remote</div>
+            <div class="timeline-desc">Designing a specialised course covering problems from Quant and FinTech interviews — puzzles from top-tier trading firms such as Jane Street, Tower Research Capital, and Optiver. Questions using probability and basic algorithms. Coming Soon!</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Front-End Development</span>
+              <span class="skill-pill">Back-End Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- InkEssence -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">Inkessence.</div>
+            <div class="timeline-org-meta">Part-time · Remote</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Full Stack Developer</span>
+              <span class="timeline-date">Jun 2025 – Present · 10 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Remote</div>
+            <div class="timeline-desc">Majorly working on the InkEssence website currently. In the future, plan to design various consumer-friendly products and services through ML Models and other skillsets to grow this newly-founded venture.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Web Development</span>
+              <span class="skill-pill">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DPS RK Puram clubs -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">Delhi Public School R.K. Puram</div>
+            <div class="timeline-org-meta">Part-time · 7 yrs total</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Member — CyberX Cybersecurity Club</span>
+              <span class="timeline-date">Jul 2025 – Present · 9 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Remote</div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Wrote a research paper demystifying mathematical foundations of cybersecurity concepts. Selected for CBSE Cyber Surakshthi Bharat Competition.</li>
+                <li>Proctored the Inter-DPS Quiz Finals.</li>
+              </ul>
+            </div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Front-End Development</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Lead Tabla Player — Indian Instrumental Club</span>
+              <span class="timeline-date">Apr 2019 – Present · 7 yrs</span>
+            </div>
+            <div class="timeline-type">New Delhi, On-site</div>
+            <div class="timeline-desc">Lead tabla player for annual SUPW showcase, followed by a pair-wise beatboxing performance. Participated in the instrumental team for a semi-core fusion song played at the opening ceremonies of the Class 12 Scholar Badge ceremony and Day 1 of Commastitva Event (annual commerce fest).</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Tabla</span>
+              <span class="skill-pill">Beatboxing</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Senior Member — Digex Photography &amp; Filmmaking Club</span>
+              <span class="timeline-date">Aug 2025 – Present · 8 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Hybrid</div>
+            <div class="timeline-desc">Majorly working in the technical department, responsible for designing the back-end framework along with fellow team members for the Digex website.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Web Development</span>
+              <span class="skill-pill">Back-End Web Development</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">National Swimming Team</span>
+              <span class="timeline-date">Apr 2019 – Aug 2019 · 5 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, On-site</div>
+            <div class="timeline-desc">Selected for the CBSE National Swimming Meet (Delhi side). Got 4th position in butterfly and relay finals. Represented Delhi at Khelo India Swimming Meet (state level), 4th position in freestyle and relay finals.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Swimming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quora -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">Quora</div>
+            <div class="timeline-org-meta">Freelance · Remote</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Freelance Technical Writer</span>
+              <span class="timeline-date">Jan 2023 – Present · 3 yrs 3 mos</span>
+            </div>
+            <div class="timeline-type">Delhi, Remote</div>
+            <div class="timeline-desc">Answering questions on a daily basis with 10k+ views per month.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Writing &amp; Technical Writing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YRI -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">YRI — Student Researcher</div>
+            <div class="timeline-org-meta">Internship · Online/Remote</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Student Researcher</span>
+              <span class="timeline-date">Mar 2026 · 1 mo</span>
+            </div>
+            <div class="timeline-type">Online, Remote</div>
+            <div class="timeline-desc">Selected for the YRI Science Fellowship 2026. Filled the application form and received an offer with financial aid options. Did not join due to extreme academic load and costs.</div>
+            <div class="timeline-skills">
+              <span class="skill-pill">Educational Research</span>
+              <span class="skill-pill">Scholarly Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Harvard -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">Harvard Ventures — TECH Summer Program</div>
+            <div class="timeline-org-meta">Internship · Boston, MA (On-site)</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">HVTSP Scholar</span>
+              <span class="timeline-date">Jan 2025 · 1 mo</span>
+            </div>
+            <div class="timeline-type">Harvard John A. Paulson School of Engineering &amp; Applied Sciences</div>
+            <div class="timeline-desc">Selected for HVTSP in both 2024 and 2025 consecutively. Invited to campus by Professor Paul Bottino from Harvard Paulson School of Engineering. Did not join due to academic load.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DPS Noida -->
+      <div class="timeline-group reveal">
+        <div class="timeline-org-header">
+          <div>
+            <div class="timeline-org-name">Delhi Public School Noida</div>
+            <div class="timeline-org-meta">Part-time · On-site · 3 yrs 1 mo</div>
+          </div>
+        </div>
+        <div class="timeline-roles">
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">National &amp; State Swimming Team</span>
+              <span class="timeline-date">Apr 2017 – Apr 2019</span>
+            </div>
+            <div class="timeline-desc">Won various swimming competitions at state and national level. Represented UP twice and Delhi once at the Khelo India Games at Talkatora Stadium, Delhi.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta-row">
+              <span class="timeline-role">Lead Tabla Player — Indian Instrumental Club</span>
+              <span class="timeline-date">Apr 2016 – Apr 2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <p class="section-label reveal">Projects</p>
+    <h2 class="section-title reveal">Things I've <em>built</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-num">01 · Sep 2025</div>
+        <div class="project-name">nomex</div>
+        <div class="project-desc">IUPAC Name Generator — enter a compound's details or common name and get its IUPAC name. Python backend, React + HTML/CSS frontend. Prototype stage; full frontend in production.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Chemistry</span>
+          <span class="project-tag">Prototype</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">02 · In Production</div>
+        <div class="project-name">ribock</div>
+        <div class="project-desc">Personalised roadmap generator for competitive programmers. Generates a learning path based on current rating on recognised CP platforms, targeting ICPC, interview prep, or general problem solving.</div>
+        <div class="project-tags">
+          <span class="project-tag">CP</span>
+          <span class="project-tag">Roadmap AI</span>
+          <span class="project-tag">Web</span>
+          <span class="project-tag">In Production</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-num">03 · Sep 2021</div>
+        <div class="project-name">terra</div>
+        <div class="project-desc">Personalised AI assistant using pyttsx3 and smtplib libraries. Enough to fill your daily entertainment quota without even touching your computer.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">pyttsx3</span>
+          <span class="project-tag">smtplib</span>
+          <span class="project-tag">AI Assistant</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PUBLICATIONS ── -->
+  <section class="section" id="publications">
+    <p class="section-label reveal">Publications</p>
+    <h2 class="section-title reveal">Words I've <em>written</em></h2>
+    <div class="pub-list">
+      <div class="pub-card reveal">
+        <div class="pub-title">Unlocking the Mathematical Code behind Cybersecurity</div>
+        <div class="pub-venue">CyberX — Cybersecurity Club of DPS RK Puram · Aug 13, 2025</div>
+        <div class="pub-desc">Shortlisted to be sent for the CBSE National Level Cyber-Security Awareness Competition. An expository research paper demystifying mathematical foundations in cybersecurity — exploring how number theory, algebra, and probability underpin modern security systems.</div>
+      </div>
+      <div class="pub-card reveal">
+        <div class="pub-title">Unlocking the Mysteries of Interstellar Time Travel</div>
+        <div class="pub-venue">Medium · Phyzard, Annual Physics Magazine of DPSRKP · Jan 14, 2024</div>
+        <div class="pub-desc">Published in Phyzard — Annual Physics Magazine of DPSRKP. Diving deep into the intriguing mystery of time travel, taking inspiration from Christopher Nolan's <em>Interstellar</em>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HONOURS ── -->
+  <section class="section" id="honours">
+    <p class="section-label reveal">Honours &amp; Awards</p>
+    <h2 class="section-title reveal">Moments of <em>recognition</em></h2>
+    <div class="honours-grid">
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🏅</span>
+        <div class="honour-name">OPhO High Honours</div>
+        <div class="honour-issuer">Physoly · Aug 2025<br>Associated with PhySoc DPSRKP</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🥇</span>
+        <div class="honour-name">Gold Medal — 7 Successive Years Academic Excellence</div>
+        <div class="honour-issuer">DPS RK Puram · May 2025</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🔵</span>
+        <div class="honour-name">Blue Tie — 6 Years of Continuous Academic Excellence</div>
+        <div class="honour-issuer">DPS RK Puram · Jan 2025<br>Awarded by Principal, VP &amp; Ms. Veditha Reddy (IAS)</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🦺</span>
+        <div class="honour-name">Second Blue Badge / Blue Blazer</div>
+        <div class="honour-issuer">DPS RK Puram · Oct 2023<br>4 continuous years of academic excellence</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🎤</span>
+        <div class="honour-name">1st Position — Open Mic Talent Show</div>
+        <div class="honour-issuer">Government of NCT Delhi · Nov 2021<br>Beatbox + blindfolded pianist fusion · East Delhi</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">📚</span>
+        <div class="honour-name">100% Scholarship — Big Bang Edge Examination</div>
+        <div class="honour-issuer">FIITJEE Limited · Nov 2021<br>Full tuition fee waiver</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🟢</span>
+        <div class="honour-name">First Green Badge for Academic Excellence</div>
+        <div class="honour-issuer">DPS RK Puram · Sep 2021<br>Above 85% in all subjects</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🔬</span>
+        <div class="honour-name">CBSE Science Challenge — Selected</div>
+        <div class="honour-issuer">Central Board of Secondary Education · Jul 2021<br>4 of 40 students selected</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🥉</span>
+        <div class="honour-name">3rd Position — National Swimming Championship</div>
+        <div class="honour-issuer">Dept. of Sports &amp; Youth Welfare, UP · May 2019<br>2 bronze medals: mixed &amp; freestyle relay</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🏊</span>
+        <div class="honour-name">4th Position — Khelo India Inter-State Swimming</div>
+        <div class="honour-issuer">Ministry of Youth Affairs &amp; Sports · Jun 2018<br>200+ swimmers · Freestyle, Butterfly, Relay</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🎵</span>
+        <div class="honour-name">Excellence in Instrumental Music Trophy</div>
+        <div class="honour-issuer">DPS Noida · Oct 2018<br>Best Tabla Player of the year · Chosen by Mr. Madan</div>
+      </div>
+
+      <div class="honour-card reveal">
+        <span class="honour-icon">🏸</span>
+        <div class="honour-name">1st Position — Croma Battle of the Shuttle, Badminton</div>
+        <div class="honour-issuer">Croma · Apr 2017<br>Junior category, singles</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section class="section" id="certifications">
+    <p class="section-label reveal">Certifications</p>
+    <h2 class="section-title reveal">Learning I've <em>formalised</em></h2>
+    <div class="certs-table reveal">
+      <div class="cert-row">
+        <span class="cert-name">Graph Theory</span>
+        <span class="cert-issuer">ParagonX Academy · Oct 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Introduction to Combinatorics Proofs</span>
+        <span class="cert-issuer">ParagonX Academy · Oct 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Vectors and Complex Numbers</span>
+        <span class="cert-issuer">ParagonX Academy · Oct 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Fourier Transformation and its Applications</span>
+        <span class="cert-issuer">Stanford University · Oct 2025 · ID: EE261</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Introduction to Mathematical Thinking</span>
+        <span class="cert-issuer">Stanford University · Jul 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Understanding Einstein: The Special Theory of Relativity</span>
+        <span class="cert-issuer">Stanford University · Jul 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Introduction to Thermodynamics &amp; Advanced Physical Chemistry</span>
+        <span class="cert-issuer">ParagonX Academy · Aug 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Advanced Techniques in Mechanics</span>
+        <span class="cert-issuer">ParagonX Academy · Aug–Sep 2025</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Algorithms</span>
+        <span class="cert-issuer">Princeton University · Oct 2023</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Instrumental and Vocal Music</span>
+        <span class="cert-issuer">Prayag Sangeet Samiti · May 2018</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section" id="skills">
+    <p class="section-label reveal">Skills &amp; Languages</p>
+    <h2 class="section-title reveal">My <em>toolkit</em></h2>
+    <div class="skills-section">
+      <div class="reveal">
+        <div class="skill-group-label">// Physics &amp; Mathematics</div>
+        <div class="chips">
+          <span class="chip highlight">Classical Physics</span>
+          <span class="chip highlight">Relativistic Quantum Mechanics</span>
+          <span class="chip">Cosmology</span>
+          <span class="chip">Integral &amp; Differential Calculus</span>
+          <span class="chip">Topology</span>
+          <span class="chip">Combinatorics</span>
+          <span class="chip">Graph Theory</span>
+          <span class="chip">Fourier Transforms</span>
+          <span class="chip">Lagrangian Mechanics</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skill-group-label">// Development</div>
+        <div class="chips">
+          <span class="chip highlight">Python</span>
+          <span class="chip highlight">React</span>
+          <span class="chip highlight">JavaScript</span>
+          <span class="chip">HTML / CSS</span>
+          <span class="chip">Front-End Design</span>
+          <span class="chip">Back-End Development</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Competitive Programming</span>
+          <span class="chip">C++</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skill-group-label">// Arts, Sport &amp; More</div>
+        <div class="chips">
+          <span class="chip">Tabla</span>
+          <span class="chip">Beatboxing</span>
+          <span class="chip">Swimming</span>
+          <span class="chip">Photography &amp; Filmmaking</span>
+          <span class="chip">Technical Writing</span>
+          <span class="chip">Research Skills</span>
+          <span class="chip">Social Media</span>
+          <span class="chip">Campus Management</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skill-group-label">// Languages</div>
+        <div class="chips">
+          <span class="chip highlight">English — Full Professional Proficiency</span>
+          <span class="chip highlight">Hindi — Full Professional Proficiency</span>
+          <span class="chip">Klingon — Elementary Proficiency 🖖</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <p class="section-label reveal">Contact</p>
+    <h2 class="section-title reveal">Let's <em>connect</em></h2>
+    <div class="contact-layout">
+      <div class="reveal">
+        <p class="contact-intro">
+          If you share a passion for physics, music, technology, quant finance, or simply want to collaborate on something interesting — feel free to reach out. Let's learn and grow together.
+        </p>
+        <div class="contact-meta">
+          <div>Location: <span>Delhi, India</span></div>
+          <div>School: <span>DPS RK Puram, Class of 2026</span></div>
+          <div>Pronouns: <span>He/Him</span></div>
+          <div>Open to: <span>Collaborations, Internships, Research</span></div>
+        </div>
+      </div>
+      <div class="contact-links reveal reveal-delay-1">
+        <a href="https://www.linkedin.com/in/shesh08/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-icon">in</span>
+          <div>
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-sub">linkedin.com/in/shesh08 · 1,342 followers</div>
+          </div>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="contact-link-icon">@</span>
+          <div>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-sub">[Add your email here]</div>
+          </div>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="contact-link-icon">gh</span>
+          <div>
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-sub">[Add your GitHub here]</div>
+          </div>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="contact-link-icon">Q</span>
+          <div>
+            <div class="contact-link-label">Quora</div>
+            <div class="contact-link-sub">10k+ monthly views · Technical Writing</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <strong>Shesh Shiromani</strong> · DPS RK Puram, Delhi, India · Class of 2026
+  </div>
+  <div class="footer-right">
+    <a href="https://www.linkedin.com/in/shesh08/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#home">Top ↑</a>
+  </div>
+</footer>
+
+<!-- Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
